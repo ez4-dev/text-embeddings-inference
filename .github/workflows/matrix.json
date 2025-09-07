@@ -7,13 +7,5 @@
     "cudaComputeCap": 80,
     "grpc": true,
     "dockerfile": "Dockerfile-cuda"
-  },
-  {
-    "name": "All",
-    "imageNamePrefix": "cuda-",
-    "runOn": "always",
-    "sccache": false,
-    "grpc": false,
-    "dockerfile": "Dockerfile-cuda-all"
   }
 ]
