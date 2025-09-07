@@ -27,7 +27,6 @@ jobs:
       matrix: ${{fromJson(needs.matrix.outputs.matrix)}}
     concurrency:
       group: ${{ github.workflow }}-${{ github.job }}-${{matrix.name}}-${{ github.head_ref || github.run_id }}
-      cancel-in-progress: true
     runs-on: ubuntu-22.04
     permissions:
       contents: write
